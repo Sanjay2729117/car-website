@@ -1,103 +1,212 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-:root{
-    --yellow:#eedb33;
-    --blue:#024164;
-    --black:#000;
-    --white:#fff;
-    --grey:#FFD700;
+:root {
+    --yellow: #eedb33;
+    --blue: #024164;
+    --black: #000;
+    --white: #fff;
+    --grey: #FFD700;
 }
-*{
+
+* {
     margin: 0px;
     padding: 0px;
 }
-.nav{
+
+.nav {
     width: 100%;
     height: 90px;
     border-radius: 0px 0px 20px 20px;
-    background:var(--blue) ;
+    background: var(--blue);
     position: relative;
 }
-.img{
+
+.img {
     width: 41px;
     height: 41px;
     position: absolute;
     border-radius: 10px;
     top: 25px;
     left: 20px;
-    
+
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: column;
     position: absolute;
     left: 67px;
     top: 28px;
 }
-.name
-{
+
+.name {
     color: var(--white);
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: 'Karla', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-letter-spacing: -0.24px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.24px;
 }
-.greet{
+
+.greet {
     color: var(--grey);
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: 'Karla', sans-serif;
-font-size: 10px;
-font-style: normal;
-font-weight: 400;
-letter-spacing: -0.24px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Karla', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.24px;
 }
-.flex{
+
+.flex {
     display: flex;
     flex-direction: row-reverse;
     position: absolute;
     right: 20px;
     top: 45px;
 }
-.image{
+
+.image {
     width: 90%;
     height: 170px;
     border-radius: 25px;
     object-fit: cover;
 }
-.image1{
-    
+
+.image1 {
+
     position: absolute;
     left: 5%;
     top: 108px;
 }
-.button1{
+
+.button1 {
     border-radius: 10px;
-border: 1px solid rgba(128, 128, 128, 0.30);
-background: rgba(217, 217, 217, 0.30);
-width: 94px;
-height: 28px;
-color: #140000;
-text-align: center;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: 'Karla', sans-serif;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-letter-spacing: -0.24px;
-transition: all .4s ease;
+    border: 1px solid rgba(128, 128, 128, 0.30);
+    background: rgba(217, 217, 217, 0.30);
+    width: 94px;
+    height: 28px;
+    color: #140000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.24px;
+    transition: all .4s ease;
 }
-.button1:focus{
+
+.button1:focus {
     border-radius: 10px;
-border: 1px solid rgba(128, 128, 128, 0.30);
-background: var(--blue);
-color: var(--white);
+    border: 1px solid rgba(128, 128, 128, 0.30);
+    background: var(--blue);
+    color: var(--white);
 }
-.button{
+
+.button {
     position: absolute;
+    width: 90%;
     top: 300px;
-    gap: 27px;
-    left: 20%;
+    gap: 15%;
+    left: 5%;
     display: flex;
+}
+
+.color {
+    background: var(--blue);
+    color: var(--white);
+    font-family: 'Karla', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.cars {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 350px;
+    left: 5%;
+    gap: 5vh;
+}
+
+.btn1 {
+    margin-left: 160px;
+}
+.top{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: var(--blue);
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Karla', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    border-radius: 0px 0px 0px 15px;
+}
+
+@media (min-width: 700px) and (max-width: 1199px) {
+    .image {
+        width: 90%;
+        height: 300px;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+
+    .button {
+        width: 90%;
+        position: absolute;
+        top: 450px;
+        gap: 30vw;
+        left: 5%;
+        display: flex;
+    }
+
+    .cars {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 500px;
+        left: 5%;
+        gap: 5vh;
+    }
+
+    .btn1 {
+        margin-left: 80%;
+    }
+}
+
+@media (min-width:1200px) and (max-width: 8000px) {
+    .image {
+        width: 90%;
+        height: 500px;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+
+    .button {
+        width: 90%;
+        position: absolute;
+        top: 650px;
+        gap: 36vw;
+        left: 5%;
+        display: flex;
+    }
+
+    .cars {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 750px;
+        left: 5%;
+        gap: 5vh;
+    }
+
+    .btn1 {
+        margin-left: 85%;
+    }
 }
