@@ -146,7 +146,7 @@
     font-family: 'Karla', sans-serif;
     font-size: 12px;
     font-style: normal;
-    border-radius: 0px 0px 0px 15px;
+    border-radius: 0px 15px 0px 15px;
 }
 
 @media (min-width: 700px) and (max-width: 1199px) {
