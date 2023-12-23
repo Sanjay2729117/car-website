@@ -15,6 +15,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400&family=Poppins:wght@200&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -59,7 +61,8 @@
     <button class="button1">Pre Owned</button>
   </div>
   <div class="cars">
-    <div class="card" style="width: 90%;border-radius: 25px;">
+    <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="50000" data-aos-easing="linear" class="card"
+      style="width: 90%;border-radius: 25px;">
       <img src="./img/swift.webp" class="card-img-top" style="border-radius: 25px 25px 0px 0px;" alt="...">
       <div class="card-body">
         <div class="top">
@@ -72,7 +75,8 @@
 
       </div>
     </div>
-    <div class="card" style="width: 90%;border-radius: 25px;">
+    <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="50000" data-aos-easing="linear" class="card"
+      style="width: 90%;border-radius: 25px;">
       <img src="./img/mahindra.jpg" class="card-img-top" style="border-radius: 25px 25px 0px 0px;" alt="...">
       <div class="card-body">
         <div class="top">
@@ -85,7 +89,8 @@
 
       </div>
     </div>
-    <div class="card" style="width: 90%;border-radius: 25px;">
+    <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="50000" data-aos-easing="linear" class="card"
+      style="width: 90%;border-radius: 25px;">
       <img src="./img/thar.jpg" class="card-img-top" style="border-radius: 25px 25px 0px 0px;" alt="...">
       <div class="card-body">
         <div class="top">
@@ -98,7 +103,8 @@
 
       </div>
     </div>
-    <div class="card" style="width: 90%;border-radius: 25px;">
+    <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="50000" data-aos-easing="linear" class="card"
+      style="width: 90%;border-radius: 25px;">
       <img src="./img/jetta.jpg" class="card-img-top" style="border-radius: 25px 25px 0px 0px;" alt="...">
       <div class="card-body">
         <div class="top">
@@ -116,6 +122,10 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
