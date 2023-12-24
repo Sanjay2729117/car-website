@@ -148,6 +148,7 @@
     font-size: 12px;
     font-style: normal;
     border-radius: 0px 15px 0px 15px;
+
 }
 
 .c1 {
@@ -161,8 +162,6 @@
     left: 75%;
     bottom: 20px;
     justify-content: flex-end;
-
-
 }
 
 @media (min-width: 700px) and (max-width: 1199px) {
@@ -194,6 +193,7 @@
     .btn1 {
         margin-left: 80%;
     }
+
     .cont {
         position: absolute;
         display: inline-flex;
@@ -201,8 +201,8 @@
         left: 80%;
         bottom: 20px;
         justify-content: flex-end;
-    
-    
+
+
     }
 }
 
@@ -235,6 +235,7 @@
     .btn1 {
         margin-left: 85%;
     }
+
     .cont {
         position: absolute;
         display: inline-flex;
@@ -242,7 +243,7 @@
         left: 80%;
         bottom: 20px;
         justify-content: flex-end;
-    
-    
+
+
     }
 }
