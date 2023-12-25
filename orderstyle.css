@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    background: #024164;
+    position: relative;
+}
+
+.corner {
+    width: 100%;
+    height: 598px;
+    border-radius: 16px 16px 0px 0px;
+    background: #FFF;
+    top: 277px;
+    position:relative;
+}
+.car{
+    color: #27214D;
+text-align: center;
+
+font-family: 'Karla', sans-serif;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px; /* 100% */
+letter-spacing: -0.32px;
+position: absolute;
+top: 35px;
+left: 24px;
+}
+.text {
+    color: #000;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px;
+    /* 213.333% */
+    letter-spacing: -0.15px;
+    font-family: 'Karla', sans-serif;
+    position: absolute;
+    top: 79px;
+    left: 24px;
+}
+.text1{
+    color: #000;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px;
+    /* 213.333% */
+    letter-spacing: -0.15px;
+    font-family: 'Karla', sans-serif;
+    position: absolute;
+    top: 79px;
+    right: 14px;
+}
+.line{
+    width: 1px;
+height: 344px;
+position: absolute;
+background: #000;
+left: 251px;
+top:90px
+}
+.carimage{
+    height: 289px;
+    width: 300px;
+    z-index: 5;
+    position: absolute;
+    top: 60px;
+    left: 1px;
+background: url("./img/swift1.png");
+
+}
+svg{
+    position: absolute;
+    top:25px;
+    left: 24px;
+}
+.contacts{
+    display: flex;
+    gap: 56px;
+    position: absolute;
+    bottom: 44px;
+    left: 24px;
+}
+button{
+    width: 147px;
+height: 48.14px;border-radius: 10px;
+background: #024164;color: #FFF;
+text-align: center;
+font-family: 'Karla', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: -0.16px;
+}
+.web{
+    margin-top: 15px;
+}
