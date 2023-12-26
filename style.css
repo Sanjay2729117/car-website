@@ -18,13 +18,15 @@
     height: 90px;
     border-radius: 0px 0px 20px 20px;
     background: var(--blue);
-Position:fixed;
-top:0px;
-z-index:5;
+    Position: fixed;
+    top: 0px;
+    z-index: 5;
 }
-i{
+
+i {
     color: var(--blue);
 }
+
 .img {
     width: 41px;
     height: 41px;
