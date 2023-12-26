@@ -18,8 +18,8 @@
     height: 90px;
     border-radius: 0px 0px 20px 20px;
     background: var(--blue);
-Position:sticky;
-top:0;
+Position:fixed;
+top:0px;
 z-index:5;
 }
 
