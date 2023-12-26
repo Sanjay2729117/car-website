@@ -2,7 +2,7 @@
 
 :root {
     --yellow: #eedb33;
-    --blue: #024164;
+    --blue: #007bff;
     --black: #000;
     --white: #fff;
     --grey: #FFD700;
@@ -22,7 +22,9 @@ Position:fixed;
 top:0px;
 z-index:5;
 }
-
+i,a{
+    color: var(--blue);
+}
 .img {
     width: 41px;
     height: 41px;
