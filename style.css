@@ -7,7 +7,9 @@
     --white: #fff;
     --grey: #FFD700;
 }
-
+.show {
+    display: block;
+  }
 * {
     margin: 0px;
     padding: 0px;
@@ -106,7 +108,22 @@ i {
     letter-spacing: -0.24px;
     transition: all .4s ease;
 }
-
+.active1{
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.30);
+    background: var(--blue);
+    color: var(--white); width: 94px;
+    height: 28px;
+    color: var(--white);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.24px;
+    transition: all .4s ease;
+}
 .button1:focus {
     border-radius: 10px;
     border: 1px solid rgba(128, 128, 128, 0.30);
@@ -172,6 +189,7 @@ i {
     bottom: 20px;
     justify-content: flex-end;
 }
+
 
 @media (min-width: 700px) and (max-width: 1199px) {
     .image {
