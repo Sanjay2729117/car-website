@@ -22,10 +22,14 @@
       <div class="name">SMK AUTOMOBILES</div>
       <div class="greet">Best place to Buy or Rent</div>
     </div>
-    <div class="flex">
-      <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;" class="search"></i>
+    <div class="search-container" id="searchContainer">
+        <input type="text" id="carSearch" placeholder="Search cars...">
+        <button onclick="searchCars()">Search</button>
     </div>
-  </div>
+    <div class="flex" onclick="toggleSearch()">
+        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+    </div>
+</div>
   <div id="carouselExampleAutoplaying" class="carousel slide image image1" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -165,7 +169,38 @@
         // Add the 'active' class to the selected button
         selectedButton.classList.add('active1');
       }
-    </script>
+    
+    var searchContainer = document.getElementById('searchContainer');
+    var carSearch = document.getElementById('carSearch');
+
+    function toggleSearch() {
+        // Toggle visibility of the search container
+        if (searchContainer.style.display === 'none' || searchContainer.style.display === '') {
+            searchContainer.style.display = 'flex';
+            carSearch.focus(); // Auto-focus on the input field
+        } else {
+            searchContainer.style.display = 'none';
+            carSearch.value = ''; // Clear the search input
+            searchCars(); // Reset the displayed cars
+        }
+    }
+
+    function searchCars() {
+        var input, filter, cards, card, txtValue;
+        input = carSearch;
+        filter = input.value.toUpperCase();
+        cards = document.querySelectorAll('.c2');
+
+        cards.forEach(function (card) {
+            txtValue = card.getAttribute('data-search').toUpperCase();
+            if (txtValue.indexOf(filter) > -1) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+</script>
 
 </body>
 </html>
