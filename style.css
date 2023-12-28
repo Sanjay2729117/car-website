@@ -52,7 +52,11 @@ box-shadow: 0px 0px 7px rgba(0, 0, 0,. 3);
     top: 0px;
     z-index: 5;
 }
-
+.request{
+   position: absolute;
+   right: 15%; 
+   top: 50%;
+}
 i {
     color: var(--blue);
 }
@@ -73,16 +77,6 @@ i {
     position: absolute;
     left: 67px;
     top: 28px;
-}
-a{
-    text-decoration: none;
-    color: var(--blue);
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: 'Karla', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: -0.24px;
 }
 .name {
     color: var(--white);
