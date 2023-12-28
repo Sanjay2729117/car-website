@@ -7,6 +7,31 @@
     --white: #fff;
     --grey: #FFD700;
 }
+#searchBar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -11px;
+    right: 15px;
+  }
+  .button12{
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.30);
+    background: var(--blue);
+    width: 14px;
+    height: 28px;
+    position: absolute;
+    right: 12px;
+    top: -4px;
+  }
+#searchInput {
+    margin-right: 30px;
+    margin-top: 0px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 60vw;
+  }
 .show {
     display: block;
   }

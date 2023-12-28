@@ -22,12 +22,13 @@
       <div class="name">SMK AUTOMOBILES</div>
       <div class="greet">Best place to Buy or Rent</div>
     </div>
-    <div class="search-container" id="searchContainer">
-        <input type="text" id="carSearch" placeholder="Search cars...">
-        <button onclick="searchCars()">Search</button>
-    </div>
-    <div class="flex" onclick="toggleSearch()">
-        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+    <div class="flex">
+      <i class="fa-solid fa-magnifying-glass fa-lg search" style="color: #ffffff;" id="searchIcon" onclick="toggleSearchBar()"></i>
+      <div id="searchBar" style="display: none;">
+        <input type="text" id="searchInput" placeholder="   Search">
+        <button onclick="performSearch()" class="button12"><i class="fa-solid fa-magnifying-glass fa-lg search" style="color: #ffffff;" ></i>
+        </button>
+      </div>
     </div>
 </div>
   <div id="carouselExampleAutoplaying" class="carousel slide image image1" data-bs-ride="carousel">
@@ -81,7 +82,7 @@
       </div>
     </div>
     <div  class="card c1 c2 filterDiv Rent"
-      style="width: 90%;border-radius: 25px;">
+      style="width: 90vw;border-radius: 25px;">
       <img src="./img/mahindra.jpg" class="card-img-top" style="border-radius: 25px 25px 0px 0px;" alt="...">
       <div class="card-body">
         <div class="top">
@@ -115,7 +116,7 @@
       </div>
     </div>
     <div  class="card c1 c2 filterDiv Rent"
-      style="width: 90%;border-radius: 25px;">
+      style="width: 90vw;border-radius: 25px;">
       <img src="./img/jetta.jpg" class="card-img-top" style="border-radius: 25px 25px 0px 0px;" alt="...">
       <div class="card-body">
         <div class="top">
@@ -169,37 +170,43 @@
         // Add the 'active' class to the selected button
         selectedButton.classList.add('active1');
       }
-    
-    var searchContainer = document.getElementById('searchContainer');
-    var carSearch = document.getElementById('carSearch');
 
-    function toggleSearch() {
-        // Toggle visibility of the search container
-        if (searchContainer.style.display === 'none' || searchContainer.style.display === '') {
-            searchContainer.style.display = 'flex';
-            carSearch.focus(); // Auto-focus on the input field
-        } else {
-            searchContainer.style.display = 'none';
-            carSearch.value = ''; // Clear the search input
-            searchCars(); // Reset the displayed cars
-        }
+function toggleSearchBar() {
+  var searchBar = document.getElementById('searchBar');
+  var name=document.querySelector(".name");
+  var greet=document.querySelector(".greet");
+  var search=document.querySelector('.search');
+  if(searchBar.style.display === 'none' || searchBar.style.display === ''){
+    searchBar.style.display =  'flex' ;
+    name.style.display='none';
+    greet.style.display='none';
+    search.style.display='none';
+  }else{
+    searchBar.style.display = 'none';
+    name.style.display='block';
+    search.style.display='block';
+    greet.style.display='block';
+  }
+}
+
+// Add this function to perform the search (you can customize this based on your needs)
+function performSearch() {
+  var searchInputValue = document.getElementById('searchInput').value.toLowerCase();
+  var cards = document.querySelectorAll('.c2');
+
+  cards.forEach(function (card) {
+    var cardText = card.innerText.toLowerCase();
+    if (cardText.includes(searchInputValue)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
     }
+  });
+  
+  // Optionally, close the search bar after performing the search
+  toggleSearchBar();
+}
 
-    function searchCars() {
-        var input, filter, cards, card, txtValue;
-        input = carSearch;
-        filter = input.value.toUpperCase();
-        cards = document.querySelectorAll('.c2');
-
-        cards.forEach(function (card) {
-            txtValue = card.getAttribute('data-search').toUpperCase();
-            if (txtValue.indexOf(filter) > -1) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    }
 </script>
 
 </body>
