@@ -6,6 +6,11 @@
     --white: #fff;
     --grey: #FFD700;
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
 form{
     display: flex;
     padding: 20px;
