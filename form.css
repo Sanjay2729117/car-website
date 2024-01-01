@@ -73,4 +73,15 @@ input{
 }
 input:focus{
     outline: none;
-}
+h1{
+text-align:center;
+position:relative;
+top:15%;
+
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.24px;
+} 
