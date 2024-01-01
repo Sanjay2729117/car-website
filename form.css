@@ -73,7 +73,7 @@ input{
 }
 input:focus{
     outline: none;
-h1{
+.h1{
 text-align:center;
 position:relative;
 top:15%;
