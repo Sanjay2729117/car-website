@@ -10,6 +10,7 @@
 }
 #carouselExampleIndicators img {
     height: 250px; /* Set your desired height */
+width: 100%;
     object-fit: cover; /* Maintain aspect ratio and cover the entire container */
 }
 .content{
@@ -89,7 +90,7 @@ body{
     position: absolute;
     width: 100%;
     top: 20%;
-    gap: 15%;
+    gap: 10%;
     left: 5%;
     display: flex;
 }
