@@ -8,13 +8,16 @@
     --white: #fff;
     --grey: #FFD700;
 }
+body{
+    width: 100%;
+}
 #carouselExampleIndicators img {
     height: 250px; /* Set your desired height */
-width: 100%;
+width: 90vw;
     object-fit: cover; /* Maintain aspect ratio and cover the entire container */
 }
 .content{
-    width: 100%;
+    width: 100vw;
     height:100%;
     position: absolute;
     top:240px;
@@ -88,9 +91,9 @@ body{
 
 .button {
     position: absolute;
-    width: 100%;
+    width: 90%;
     top: 20%;
-    gap: 10%;
+    gap: 20%;
     left: 5%;
     display: flex;
 }
@@ -107,6 +110,50 @@ body{
     font-weight: 400;
     letter-spacing: -0.24px;
 
+}
+.r1{
+    display: flex;
+    justify-content: space-between;
+}
+.details{
+    width: 90%;
+    border-radius: 25px;
+    position: absolute;
+    left:5%;
+    top:45%;
+}
+.details>*:nth-child(odd){
+    background-color: lightblue;
+    
+    padding: 20px;
+}
+.details>*:nth-child(even){
+    background-color: whitesmoke;
+    
+    padding: 20px;
+}
+.error{
+    display: none;
+}
+.show{
+    display: block;
+}
+.details1{
+    width: 90%;
+    border-radius: 25px;
+    position: absolute;
+    left:5%;
+    top:45%;
+}
+.details1>*:nth-child(odd){
+    background-color: lightblue;
+    
+    padding: 20px;
+}
+.details1>*:nth-child(even){
+    background-color: whitesmoke;
+    
+    padding: 20px;
 }
 @media (min-width: 700px) and (max-width: 1199px){
     
