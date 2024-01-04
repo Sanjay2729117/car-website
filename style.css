@@ -7,6 +7,9 @@
     --white: #fff;
     --grey: #FFD700;
 }
+.noscroll{
+    overflow: hidden;
+}
 #searchBar {
     display: flex;
     align-items: center;
@@ -244,6 +247,7 @@ path:nth-child(3){
     background-color: black;
     opacity: 90%;
     z-index: 100;
+    overflow: hidden;
 }
 .l{
     position: absolute;
@@ -296,6 +300,7 @@ path:nth-child(3){
         position: absolute;
         background-color: black;
         opacity: 90%;
+        overflow: hidden;
         z-index: 100;
     }
     .l{
@@ -352,6 +357,7 @@ path:nth-child(3){
         background-color: black;
         opacity: 90%;
         z-index: 100;
+        overflow: hidden;
     }
     .l{
         position: absolute;

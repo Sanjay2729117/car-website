@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body class="noscroll">
   <div class="preload">
     <svg class="l" width="169" height="39" viewBox="0 0 169 39" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M112.459 34.3342V36.3342H114.459H123.568H125.568V34.3342V26.7033L129.022 24.3379L142.861 35.8706L143.417 36.3342H144.141H155.091H160.687L156.359 32.7872L138.823 18.4169L156.036 6.83352L161.473 3.17424H154.919H143.797H143.18L142.669 3.52271L125.568 15.2036V5.17424V3.17424H123.568H114.459H112.459V5.17424V34.3342Z" stroke="white" stroke-width="4"/>
@@ -147,9 +147,12 @@
     crossorigin="anonymous"></script>
     <script>
       var load=document.querySelector(".preload");
+      var body=document.querySelector(".noscroll");
       window.addEventListener('load',function(){
         load.style.display='none';
+        body.classList.remove('noscroll');
       })
+     
       function filterSelection(button) {
         // Get the category from the button's data-category attribute
         var category = button.getAttribute('data-category');
