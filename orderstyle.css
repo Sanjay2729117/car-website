@@ -11,6 +11,14 @@
 body{
     width: 100%;
 }
+.cont{
+    width: 90%;
+    display: flex;
+    position: absolute;
+    left: 5%;
+    bottom: -100%;
+    justify-content: space-between;
+}
 #carouselExampleIndicators img {
     height: 250px; /* Set your desired height */
 width: 90vw;
@@ -189,6 +197,9 @@ path:nth-child(3){
     position: absolute;
     top: 50%;
     left: 30%;
+}
+.noscroll{
+    overflow: hidden;
 }
 @media (min-width: 700px) and (max-width: 1199px){
     .preload{
@@ -377,13 +388,10 @@ path:nth-child(3){
     background: var(--blue);
     color: var(--white);
 }
-
 .button {
     position: absolute;
     width: 90%;
-    top: 20%;
-    gap: 15%;
-    left: 5%;
+    justify-content: space-between;
     display: flex;
 }
 .carname{
