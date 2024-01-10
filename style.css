@@ -100,7 +100,46 @@ i {
     font-weight: 400;
     letter-spacing: -0.24px;
 }
+.details{
+    margin-top: 5%;
+    width: 100%;
+    background-color: var(--blue);
+    border-radius: 5px;
 
+}
+details{
+    margin-top: 4%;
+    border-radius: 5px;
+
+
+}
+p{
+    color: var(--black);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 30px;
+    letter-spacing: -0.24px;
+}
+summary{
+    color: var(--white);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: -0.24px;
+    margin-top: 1%;
+    padding-left: 5px;
+    padding-top: 1px;
+    border-radius: 5px;
+
+    
+    background-color: var(--blue);
+    border-radius: 6px;
+}
 .flex {
     display: flex;
     flex-direction: row-reverse;
