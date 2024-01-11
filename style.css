@@ -262,17 +262,17 @@ summary{
 path:nth-child(3){
     stroke-dashoffset:702.845947265625;
     stroke-dasharray: 702.845947265625;
-    animation: lin 2s ease  infinite forwards 0.3s;
+    animation: lin 4s ease  infinite forwards 0.3s;
    }
    path:nth-child(2){
     stroke-dashoffset: 934.1072998046875;
     stroke-dasharray: 934.1072998046875;
-    animation: lin 2s ease  infinite forwards 0.3s;
+    animation: lin 4s ease  infinite forwards 0.3s;
    }
    path:nth-child(1){
     stroke-dashoffset:698.9061279296875;
     stroke-dasharray: 698.9061279296875;
-    animation: lin 2s ease  infinite forwards 0.3s;
+    animation: lin 4s ease  infinite forwards 0.3s;
    }
     @keyframes lin{
         to{
