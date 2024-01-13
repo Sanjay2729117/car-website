@@ -2,8 +2,8 @@
 var cararray = [
     {
         Vehicle: 'Suzuki Swift',
-        price: 345000,
-        km: 40000,
+        price: "2.85 Lakh",
+        km: 57000,
         color: 'red',
         registration: 'TN 38',
         year: 2016,
@@ -17,8 +17,8 @@ var cararray = [
     },
     {
         Vehicle: 'Mahindra Xuv 700',
-        price: 900000,
-        km: 20000,
+        price:"12.72 Lakhs",
+        km: 42000,
         color: 'silver',
         registration: 'TN 37',
         year: 2019,
@@ -32,8 +32,8 @@ var cararray = [
     },
     {
         Vehicle: 'Mahindra thar',
-        price: 1400000,
-        km: 30000,
+        price: '20 lakhs',
+        km: 50000,
         color: 'black',
         registration: 'TN 07',
         year: 2021,
@@ -47,8 +47,8 @@ var cararray = [
     },
     {
         Vehicle: 'Volkswagen Jetta',
-        price: 1700000,
-        km: 35000,
+        price: "17 Lakhs",
+        km: 50000,
         color: 'silver',
         registration: 'TN 99',
         year: 2016,
@@ -63,7 +63,6 @@ var cararray = [
     }
 ];
 var index=localStorage.getItem('index1');
-
         // Update HTML content based on the selected index
         document.querySelector(".vehicle").textContent = cararray[index].Vehicle;
         document.querySelector(".Price").textContent = cararray[index].price;
