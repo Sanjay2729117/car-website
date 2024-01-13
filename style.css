@@ -136,11 +136,13 @@ display:none;
 }
 
 .serv{
-display:none
+display:none;
+width:90%;
 
 }
 .au{
- display:none   
+ display:none   ;
+width:90%;
 }
 summary{
     list-style: none;
