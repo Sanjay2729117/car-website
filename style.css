@@ -107,7 +107,7 @@ i {
     border-radius: 5px;
     background-color: var(--white);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1%;
 }
 
