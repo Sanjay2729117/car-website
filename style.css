@@ -125,9 +125,10 @@ p{
     color: var(--black);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: 'Karla', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 300;
+width: 90%;
     letter-spacing: -0.24px;
 }
 .contactw{
