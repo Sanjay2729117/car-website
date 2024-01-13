@@ -132,13 +132,17 @@ p{
 }
 .contactw{
 display:none
+width: 90%;
+
 }
 
 .serv{
 display:none
+width: 90%;
 }
 .au{
  display:none   
+width: 90%;
 }
 summary{
     list-style: none;
