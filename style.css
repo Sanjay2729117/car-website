@@ -107,7 +107,7 @@ i {
     border-radius: 5px;
     background-color: var(--white);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1%;
 }
 
@@ -128,22 +128,19 @@ p{
     font-size: 15px;
     font-style: normal;
     font-weight: 300;
-width: 90%;
     letter-spacing: -0.24px;
 }
 .contactw{
-display:none
-width: 90%;
+display:none;
 
 }
 
 .serv{
 display:none
-width: 90%;
+
 }
 .au{
  display:none   
-width: 90%;
 }
 summary{
     list-style: none;
