@@ -103,7 +103,7 @@ i {
 
 .details{
     margin-top: 5%;
-    width: 100%;
+    width: 90%;
     border-radius: 5px;
     background-color: var(--white);
     display: flex;
