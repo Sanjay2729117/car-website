@@ -103,18 +103,19 @@ i {
 
 .details{
     margin-top: 5%;
-    width: 100%;
+    width: 95%;
     border-radius: 5px;
     background-color: var(--white);
     display: flex;
     justify-content: space-between;
     padding: 1%;
+margin-bottom:6%;
 }
 
 details{
     margin-top: 4%;
     border-radius: 5px;
-
+width:100%;
 }
 .details:hover{
     background-color: var(--blue);
@@ -128,17 +129,22 @@ p{
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
+width:90%;
     letter-spacing: -0.24px;
 }
 .contactw{
-display:none
+display:none;
+width:90%;
 }
 
 .serv{
-display:none
+display:none;
+width:90%;
+
 }
 .au{
- display:none   
+ display:none   ;
+width:90%;
 }
 summary{
     list-style: none;

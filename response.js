@@ -17,7 +17,7 @@ var cararray = [
     },
     {
         Vehicle: 'Mahindra Xuv 700',
-        price:"12.72 Lakhs",
+        price:"1500/day",
         km: 42000,
         color: 'silver',
         registration: 'TN 37',
@@ -32,7 +32,7 @@ var cararray = [
     },
     {
         Vehicle: 'Mahindra thar',
-        price: '20 lakhs',
+        price: '13 lakhs',
         km: 50000,
         color: 'black',
         registration: 'TN 07',
@@ -47,7 +47,7 @@ var cararray = [
     },
     {
         Vehicle: 'Volkswagen Jetta',
-        price: "17 Lakhs",
+        price: "2500/day",
         km: 50000,
         color: 'silver',
         registration: 'TN 99',

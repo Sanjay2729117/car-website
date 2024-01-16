@@ -109,7 +109,8 @@ body{
     color: var(--black);
     position: absolute;
     top:2%;
-    left: 32%;
+transform:translateX(-50);
+    left: 28%;
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: 'Karla', sans-serif;
